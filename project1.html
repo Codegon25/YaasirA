@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+            transition: 1s;
+            font-family: sans-serif;
+        }
+        body{
+            /* width: 100%; */
+            height: fit-content;
+            background-color: yellow;
+            place-content: center;
+            place-items: center;
+        }
+        #user_interface{
+            background: rgb(187,179,20);
+            box-shadow: 0 5px 30px inset, 0 5px 30px rgb(187,179,20);
+            text-align: center;
+             translate: 0 70px;
+            width: 45%;
+            /* justify-content: center; */
+            height: fit-content;
+            place-self: center;
+            border-radius: 10px;
+            place-content: center;
+            padding: 10px;
+            place-items: center;
+        }
+        #user_img{
+            display: block;
+            width: 40%;
+            height: 15em;
+            box-shadow: 0 5px 30px white;
+            border-radius: 50%;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h3{
+            text-shadow: 0 2px 4px white;
+            color: rgb(121,115,2);
+        }
+        #user_background{
+            width: 100%;
+            border-radius: 10px;
+            background-image: url(img/images\ \(3\).jpeg);
+            height: 25%;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: lighten;
+            background-repeat: no-repeat;
+        }
+        #user_info{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            line-height: 0.1;
+            text-align: center;
+        }
+        h1{
+            font-size: 35px;
+            text-shadow: 0 4px 10px;
+            color: white;
+        }
+        #user_acc{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        @media(max-width: 600px){
+            h1{
+                font-size: 80px;
+            }
+            #user_interface{
+                display: block;
+                width: 95%;
+                padding: 50px 0;
+                height: fit-content;
+                translate: 0 60px;
+                background-image: url(img/IMG_20251015_213155.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: darken;
+                background-color: rgb(179, 241, 92);
+                text-align: center;
+                place-self: center;
+            }
+            #user_acc{
+                gap: 10px;
+            }
+            #user_img{
+                display: none;
+            }
+            #user_info{
+                gap: 20px;
+                display: flex;
+            }
+            h3{
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="user_interface">
+        <div id="user_background"></div>
+        <img src="img/IMG_20251015_213155.jpg" alt="" id="user_img">
+        <h1>Adigun Yaasir</h1>
+        <div id="user_info">
+            <div>
+                <h2>Youtuber</h2>
+                <h3>Codegon</h3>
+            </div>
+             <div>
+                <h2>Frontend</h2>
+                <h3>Html|CSS</h3>
+            </div>
+             <div>
+                <h2>Scratcher</h2>
+                <h3>20 Projects</h3>
+            </div>
+        </div>     
+        <div id="user_acc">
+            <h3>Email</h3>
+            <a href="#">adigunyaasir@gmail.com</a>
+            <h3>Phone No.</h3>
+            <a href="#" type="number">08153582131</a>
+        </div> 
+    </div>
+</body>
+</html>
