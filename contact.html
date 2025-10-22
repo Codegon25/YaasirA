@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactme</title>
+</head>
+<style>
+    *{
+        transition: 1s;
+        margin: 0;
+        font-family: sans-serif;
+        padding: 0;
+    }
+    body{
+        background: rgba(67, 99, 8, 0.772);
+        background-image: url(img/OIG3.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: lighten;
+    }
+    #contact-wrapper{
+        width: 350px;
+        background-color: rgb(2, 5, 25, 0.5);
+        backdrop-filter: blur(5px);
+        margin: 10% 0;
+        box-shadow: 5 0 20px rgb(2, 5, 25, 0.5);
+        /* display: block; */
+        /* place-content: center; */
+        padding: 5% 1% 2%;
+        /* place-items: center; */
+        place-self: center;
+        border-radius: 10px;
+        /* filter: blur(5px); */
+    }
+    label{
+        font-weight: 600;
+        line-height: 1.4;
+        font-size: 25px;
+        color: white;
+        /* display: block; */
+        text-align: left;
+    }
+    input{
+        border-top: 0;
+        background: none;
+        /* border-radius: 0 0px 5px 5px; */
+        border-left: 0;
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        /* place-content: center; */
+        /* place-items: center; */
+        /* place-self: center; */
+        border-right: 0;
+        border-bottom: 2px solid white;
+    }
+    input:hover{
+        animation: input_bg 4s linear infinite;
+    }
+    @keyframes input_bg {
+        0%{
+            border-bottom: 2px solid rgb(14, 71, 6);
+        }
+        50%{
+            border-bottom: 2px solid rgb(13, 37, 12);
+        }
+        100%{
+            border-bottom: 2px solid rgb(14, 71, 6);
+        }
+    }
+    #message_box::placeholder{
+        color: gray;
+        font-size: 20px;
+    }
+    #name_input::placeholder{
+        color: rgb(125, 122, 122);
+    }
+    #message_box{
+        border: 2px solid white;
+        margin: 4% 0;
+        border-radius: 5px;
+        padding: 2% 2% 20%;
+    }
+    #submit::before{
+        content: "";
+        position: absolute;
+        width: 92.5%;
+        height: 0;
+        z-index: -1;
+        translate: -42% -23%;
+        border-radius: 10px;
+        border-top-right-radius: 5px;
+        transition: 1s;
+        background: rgb(13, 37, 12);
+    }
+    #submit:hover::before{
+        height: 11.5%;
+        width: 92.5%;
+    }
+    #submit:hover{
+        color: white;
+        transition-delay: 0.5s;
+    }
+    #submit{
+        border: 2px solid white;
+        font-size: 20px;
+        padding: 10px 41%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        place-content: center;
+        place-items: center;
+        place-self: center;
+        border-radius: 10px;
+    }
+    @media(max-width: 600px){
+        #contact-wrapper{
+            width: 80%;
+            padding: 5% 10px 5%;
+            margin: 30% 0;
+        }
+        #submit{
+            padding: 10px 42%;
+        }
+    }
+</style>
+<body>
+    <div id="contact-wrapper">
+        <label for="">Name</label>
+        <input type="text" id="name_input" placeholder="name@gmail.com">
+        <label for="">Email</label>
+        <input type="text">
+        <input type="text" placeholder="Message me" id="message_box">
+        <a href="#" id="submit">submit</a>
+    </div>
+</body>
+</html>

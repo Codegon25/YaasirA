@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutme</title>
+    <style>
+       *{
+          margin: 0;
+          padding: 0;
+          transition: 1s;
+          font-family: sans-serif;
+       }
+       body{
+        background-image: url(img/OIG3.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       #container{
+        padding: 3% 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5%;
+       }
+       #container div:hover{
+        background-image: url(img/OIG3.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: lighten;
+        background-color: rgba(38, 125, 30, 0.627);
+       }
+       #container div{
+        padding: 10px;
+        background: rgb(225, 225, 225, 0.5);
+        backdrop-filter:  blur(2px);
+        border-radius: 10px;
+        box-shadow: 0 0 20px;
+       }
+       #mainh1{
+          color: black;
+          text-align: center;
+          font-size: 60px;
+          line-height: 2;
+          padding: 5% 0 2%;
+          font-weight: 300;
+       }
+       #container h3{
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+       }
+       #container p{
+        font-size: 20px;
+       }
+       #container h1{
+        font-weight: 300;
+          font-size: 50px;
+       }
+       @media(max-width: 600px){
+          #container{
+            display: block;
+            margin: 5%;
+          }
+          #container div{
+            margin: 5% 0;
+          }
+       }
+    </style>
+</head>
+<body>
+    <h1 id="mainh1">About me</h1>
+    <div id="container">
+        <div id="youtube">
+       <h1>Youtuber</h1>
+       <h3>35 Subscribers</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorem sit vel quidem praesentium laborum adipisci qui omnis delectus amet reprehenderit ipsum rem rerum perspiciatis? Eveniet tenetur id deleniti praesentium.</p>
+    </div>
+    <div id="htmlcss">
+       <h1>Frontend</h1>
+       <h3>HTML/CSS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorem sit vel quidem praesentium laborum adipisci qui omnis delectus amet reprehenderit ipsum rem rerum perspiciatis? Eveniet tenetur id deleniti praesentium.</p>
+    </div>
+    <div id="scratcher">
+       <h1>Scratcher</h1>
+       <h3>20 Projects</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorem sit vel quidem praesentium laborum adipisci qui omnis delectus amet reprehenderit ipsum rem rerum perspiciatis? Eveniet tenetur id deleniti praesentium.</p>
+    </div>
+    </div>
+</body>
+</html>
